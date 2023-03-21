@@ -17,7 +17,7 @@ const postgresDb = require("./src/config/postgre");
 const mainRouter = require("./src/routes/main");
 // init express application
 const server = express();
-const PORT = 5000;
+const port = process.env.PORT || 5000;
 
 postgresDb
   .connect()
@@ -35,8 +35,8 @@ postgresDb
     );
     server.use(mainRouter);
     // server ready menerima request di port
-    server.listen(PORT, () => {
-      console.log(`Server is running at port ${PORT}`);
+    server.listen(port, () => {
+      console.log(`Server is running at port ${port}`);
     });
   })
   .catch((err) => {
