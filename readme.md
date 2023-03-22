@@ -28,7 +28,7 @@ Coffee for everyone
 1. Clone this repository
 
 ```sh
-$ git clone https://github.com/reynoalief/coffeshop_fe_first.git
+$ https://github.com/raynoalief/Coffeshop_be_first.git
 ```
 
 2. Install NPM packages
